@@ -24,6 +24,11 @@ require_once ROOT . 'config' . DS . 'config.php';
 require_once ROOT . 'config' . DS . 'routes.php';
 require_once ROOT . 'config' . DS . 'database.php';
 
+use SimpleAPI\Core\Configuration;
+use SimpleAPI\Core\Bootloader;
+use SimpleAPI\Core\Router;
+use SimpleAPI\Core\Exceptions\StopException;
+
 if (Configuration::$config['mode'] == "development") {
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
@@ -35,7 +40,7 @@ try {
     Router::getInstance()->run();
     Bootloader::render();
 } catch (\Exception $e) {
-    if (!($e instanceof \StopException)) {
+    if (!($e instanceof StopException)) {
         Bootloader::setResponse(500, json_encode(array('error' => $e->getMessage())));
     }
     Bootloader::render();
