@@ -1,0 +1,17 @@
+# App Files
+config/config.php
+database.php
+
+# TMP directories
+tmp/
+tmp/*
+
+# Composer files
+/vendor/
+composer.lock
+
+# System files
+.DS_Store
+*~
+.idea
+.idea/*

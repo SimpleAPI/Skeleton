@@ -1,0 +1,14 @@
+{
+    "authors": [
+        {
+            "name": "Antoine Knockaert",
+            "email": "knocka.a@gmail.com"
+        }
+    ],
+    "require": {
+        "simpleapi/core": "dev-master"
+    },
+    "require-dev": {
+
+    }
+}
