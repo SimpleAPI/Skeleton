@@ -27,6 +27,7 @@ class TestController extends AppController
 
     protected function __construct()
     {
+        parent::__construct();
     }
 
     /**

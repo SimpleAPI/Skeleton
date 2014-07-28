@@ -22,9 +22,12 @@ use SimpleAPI\Core\Controller;
  * @license  GPL v3
  * @link     http://jenkins.knck.eu
  */
-
-
 class AppController extends Controller
 {
+
+    protected function __construct()
+    {
+        parent::__construct();
+    }
 
 }
