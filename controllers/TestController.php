@@ -47,7 +47,7 @@ class TestController extends AppController
     }
 
     public function index() {
-
+        $this->response->setResponse(404, "test");
 
     }
 

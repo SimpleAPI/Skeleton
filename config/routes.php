@@ -15,3 +15,4 @@ use SimpleAPI\Core\Router;
 
 Router::addRoute('/', array('c' => 'TestController', 'a' => 'index'), 'GET');
 Router::addRoute('/', array('c' => 'TestController', 'a' => 'post'), 'POST');
+
