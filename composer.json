@@ -6,7 +6,7 @@
         }
     ],
     "require": {
-        "simpleapi/core": "v0.6.3"
+        "simpleapi/core": "v0.6.4"
     },
     "require-dev": {
 
